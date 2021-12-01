@@ -6,17 +6,17 @@ jobs:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-     - run:
+      - run:
         name: The First Step
         command: |
           echo 'Hello World!'
           echo 'STEP 1'
-    - run:
+     - run:
         name: Code Has Arrived
         command: |
           ls -al
           echo 'STEP 2'
-    - run:
+     - run:
         name: Running Test  
         command: |
           node -v

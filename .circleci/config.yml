@@ -7,20 +7,20 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run:
-        name: The First Step
-        command: |
-          echo 'Hello World!'
-          echo 'STEP 1'
+         name: The First Step
+         command: |
+           echo 'Hello World!'
+           echo 'STEP 1'
      - run:
-        name: Code Has Arrived
-        command: |
-          ls -al
-          echo 'STEP 2'
+         name: Code Has Arrived
+         command: |
+           ls -al
+           echo 'STEP 2'
      - run:
-        name: Running Test  
-        command: |
-          node -v
-          echo 'STEP 3'
+         name: Running Test  
+         command: |
+           node -v
+           echo 'STEP 3'
   package:
     docker: 
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
